@@ -19,22 +19,28 @@
 <body>
 <main>
 <h1>Homework Board privacy policy</h1>
-<p class="updated">Last updated 16 October 2026</p>
+<p class="updated">Last updated 21 October 2026</p>
 
 <p>Homework Board is a homework and study planner. It has no accounts, no ads and no analytics, and the developer never receives or sees what you put in it.</p>
 
 <h2>What the app keeps</h2>
 <ul>
-  <li>Your board: subjects, homework, assessments, study sessions, dates, times, links and the names of files you attach.</li>
-  <li>Your reminder settings and this device's name.</li>
+  <li>Your board: subjects and their colours, homework, assessments, study sessions, dates, times, links, and the photos, videos and files you attach.</li>
+  <li>Your study rules (for example "no study on Saturdays"), your reminder settings and this device's name.</li>
   <li>The list of devices in your sync group.</li>
 </ul>
 <p>All of this is stored only on your own devices.</p>
 
 <h2>Syncing between your devices</h2>
-<p>If you start or join a sync group, your board is sent directly between the devices in that group. Every connection is encrypted, and only devices the group owner has let in can read your board.</p>
+<p>If you start or join a sync group, your board, including any attachments, is sent directly between the devices in that group. Every connection is encrypted, and only devices the group owner has let in can read your board.</p>
 <p>To help your devices find each other on different networks, the app uses public relay and lookup servers run by number 0 (n0.computer), the maker of the networking library the app is built on. Those servers can see your devices' internet addresses and their random device IDs. They cannot read your board, because it stays encrypted end to end.</p>
 <p>If you never start or join a group, nothing leaves your device.</p>
+
+<h2>Waking your iPhone to sync</h2>
+<p>iPhones pause apps in the background. So that your iPhone can still catch up, it gets a push token from Apple (a random address for silent notifications) and shares it only with the other devices in your group. When one of them has changes your iPhone hasn't seen, it sends that token to a small service run by the developer on Cloudflare, which asks Apple to wake the app for a few seconds. The request contains only the token, never anything from your board. The service doesn't store or log it; it keeps the token in memory for up to 60 seconds so it doesn't wake your phone too often. The wake-up itself shows nothing on screen.</p>
+
+<h2>Camera, microphone and photos</h2>
+<p>Homework Board uses the camera only when you scan another device's group code or take a photo or video to attach to a task, the microphone only to record sound for a video you're attaching, and your photo library only when you choose a photo to attach. Anything you attach stays on your devices and syncs only to your group.</p>
 
 <h2>Notifications</h2>
 <p>Reminders are created on your device by your device. No reminder content is sent anywhere.</p>
